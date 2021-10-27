@@ -1,0 +1,33 @@
+.latest-product {
+  padding-top: 0;
+
+  --flex-space: 2rem;
+  &__card {
+    --stack-space: 1.5rem;
+
+    text-align: center;
+
+    & > h3 {
+      color: var(--clr-black-100);
+      font-size: 2;
+    }
+
+    & > .price {
+      color: var(--clr-accent-300);
+    }
+
+    & > .btn {
+      border: 0.2rem solid var(--clr-black-100);
+      background-color: transparent;
+      color: var(--clr-black-100);
+      padding-left: 4rem;
+      padding-right: 4rem;
+      transition: 200ms ease-in;
+
+      &:hover {
+        border: 0.2rem solid transparent;
+        color: var(--clr-white-100);
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.social {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+
+  & > li > a {
+    padding: 0.5rem 1.8rem;
+    border-radius: 0.5rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: var(--clr-white-100);
+  }
+}

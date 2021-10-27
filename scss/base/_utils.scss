@@ -1,0 +1,37 @@
+.stack > * + * {
+  margin-top: var(--stack-space, 1rem);
+}
+.d-flex {
+  display: flex;
+  gap: var(--flex-space, 1rem);
+
+  @media (max-width: 49em) {
+    flex-direction: column;
+  }
+
+  & > * {
+    flex-basis: 100%;
+  }
+}
+
+.mt-5 {
+  margin-top: 5rem !important;
+
+  @media (max-width: 49em) {
+    margin-top: 3rem !important;
+  }
+}
+.mt-8 {
+  margin-top: 8rem;
+  @media (max-width: 49em) {
+    margin-top: 5rem !important;
+  }
+}
+
+.align\:center {
+  align-items: center;
+}
+.relative {
+  position: relative;
+}
+ 

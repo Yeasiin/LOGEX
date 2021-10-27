@@ -1,0 +1,16 @@
+.news {
+  --flex-space: 2rem;
+  --stack-space: 2rem;
+
+  &__card {
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+
+    & > a {
+      &:hover h3 {
+        color: var(--clr-accent-400);
+      }
+    }
+  }
+}

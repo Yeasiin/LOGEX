@@ -1,0 +1,114 @@
+.product {
+  --flex-space: 5em;
+  --stack-space: 2.5rem;
+
+  @media (max-width: 62.5em) {
+    --flex-space: 3em;
+    --stack-space: 1.5rem;
+  }
+  .product-img {
+    padding: 9rem 0;
+    text-align: center;
+    width: 100%;
+
+    @media (max-width: 54.5em) {
+      align-self: flex-start;
+    }
+  }
+
+  .product-content {
+    & > .heading-primary {
+      margin-top: 0.5rem;
+    }
+
+    & > .product-list > li {
+      line-height: 2.2;
+
+      &::before {
+        content: "\2714";
+        display: inline-block;
+        padding-right: 1rem;
+      }
+    }
+  }
+
+  &.pd1 {
+    & > .pd1-deco {
+      background-image: url("../img/circle-1.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      width: 50%;
+      height: 100%;
+      position: absolute;
+      right: -35rem;
+      top: 0;
+    }
+
+    .product-img {
+      background-color: #4c55c4;
+    }
+  }
+  &.pd2 {
+    @media (max-width: 49em) {
+      .d-flex {
+        flex-direction: column-reverse !important;
+      }
+    }
+    .product-img {
+      background-color: #fde7e9;
+    }
+  }
+  &.pd3 {
+    .product-img {
+      background-color: #acfbe8;
+    }
+    & > .pd3-deco {
+      background-image: url("../img/shape-3.png");
+      background-repeat: no-repeat;
+
+      width: 50%;
+      height: 100%;
+      position: absolute;
+      right: -35rem;
+      top: 0;
+    }
+  }
+}
+
+.our-product {
+  display: flex;
+  gap: 5rem;
+
+  @media (max-width: 57em) {
+    gap: 0;
+    flex-direction: column;
+  }
+
+  &__image {
+    flex-basis: 55%;
+  }
+
+  &__content {
+    --stack-space: 2.5rem;
+
+    flex-basis: 45%;
+
+    & > h3 {
+      font-size: 2rem;
+      color: var(--clr-black-100);
+      letter-spacing: 0.1rem;
+      line-height: 1.6;
+    }
+    &-list > li {
+      line-height: 2.2;
+
+      &::before {
+        color: var(--clr-accent-300);
+        content: "\2714";
+        display: inline-block;
+        padding-right: 1rem;
+      }
+    }
+  }
+}

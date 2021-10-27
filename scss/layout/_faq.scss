@@ -1,0 +1,59 @@
+.faq {
+  background-image: url("../img/shape-2.png");
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+
+  .faq-container {
+    max-width: 90rem;
+  }
+
+  &-deco {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  &-card {
+    background-color: #f8f9fd;
+    overflow: hidden;
+
+    &__heading {
+      padding: 1.3rem 2rem;
+      background-color: rgba(0, 0, 0, 0.03);
+      border-top-left-radius: 0.25rem;
+      border-top-right-radius: 0.25rem;
+      cursor: pointer;
+
+      font-size: inherit;
+
+      &::before {
+        --icon-size: 2.5rem;
+
+        content: "➕";
+        display: inline-block;
+        width: var(--icon-size);
+        height: var(--icon-size);
+        margin-right: 1rem;
+      }
+    }
+
+    &__body {
+      display: none;
+      padding: 2rem 2rem;
+      border-bottom-left-radius: 0.25rem;
+      border-bottom-right-radius: 0.25rem;
+    }
+
+    &.open {
+      .faq-card__body {
+        display: block;
+      }
+
+      .faq-card__heading::before {
+        content: "➖";
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.contact-us__info {
+  --flex-space: 5rem;
+
+  @media (max-width: 31.5em) {
+    --flex-space: 3rem;
+  }
+
+  & > * {
+    display: flex;
+    flex-direction: column;
+  }
+  * {
+    color: var(--clr-accent-400);
+  }
+}

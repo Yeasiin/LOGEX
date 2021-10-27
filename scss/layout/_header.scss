@@ -1,0 +1,28 @@
+header.header {
+  background-image: url("../img/banner-1.jpg");
+  padding-top: 8rem;
+
+  & .hero {
+    --stack-space: 4rem;
+    margin-bottom: 5rem;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 57em) {
+      --stack-space: 2rem;
+    }
+    @media (max-width: 44em) {
+      flex-direction: column;
+      .hero-content {
+        align-self: flex-start;
+      }
+
+      .hero-image {
+        display: none;
+      }
+    }
+    @media (max-width: 31.5em) {
+      --stack-space: 1rem;
+    }
+  }
+}

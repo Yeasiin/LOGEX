@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+:root {
+  // FONT
+  --font-primary: "Open Sans", sans-serif;
+
+  //
+  // COLOR
+  --clr-accent-300: #e74c3c;
+  --clr-accent-400: #fe5b4a;
+  --clr-accent-500: #d92310;
+  --clr-white-100: #fff;
+  --clr-white-200: #f5f7ff;
+  --clr-black-100: #63688e;
+  --clr-black-400: #242424;
+  --clr-black-500: #1c1c1c;
+
+  // Extra Utils
+  --spacer: 1rem;
+}

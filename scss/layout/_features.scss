@@ -1,0 +1,11 @@
+.features {
+  --stack-space: 2rem;
+  --flex-space: 2rem;
+
+  background-image: url("../img/bg-2.png");
+
+  @media (max-width: 57em) {
+    --stack-space: 1.5rem;
+    --flex-space: 1.5rem;
+  }
+}

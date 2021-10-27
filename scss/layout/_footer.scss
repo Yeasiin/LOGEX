@@ -1,0 +1,15 @@
+footer {
+  text-align: center;
+  padding: 3.5rem 0;
+  font-weight: 600;
+  background-color: var(--clr-black-500);
+  color: var(--clr-white-100);
+
+  @media (max-width: 31.5em) {
+    font-size: 85%;
+  }
+
+  & > p > a {
+    color: var(--clr-accent-300);
+  }
+}

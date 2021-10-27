@@ -1,0 +1,25 @@
+.btn {
+  color: var(--clr-white-100);
+  padding: 1.2rem 3rem;
+  background-color: var(--clr-accent-400);
+
+  @media (max-width: 57em) {
+    padding: 1rem 2.5rem;
+  }
+
+  &:hover {
+    background-color: var(--clr-accent-300);
+  }
+
+  &.hero-btn {
+    color: var(--clr-accent-400);
+    border-radius: 0.3rem;
+    padding: 1.4rem 4rem;
+    background-color: var(--clr-white-100);
+    box-shadow: 0 6px 30px rgb(231 76 60 / 50%);
+
+    @media (max-width: 57em) {
+      padding: 1rem 2.5rem;
+    }
+  }
+}

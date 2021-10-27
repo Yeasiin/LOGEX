@@ -1,0 +1,10 @@
+.container {
+  box-sizing: content-box;
+  max-width: 114rem;
+  margin: 0 auto;
+  padding: 0 5.5rem;
+
+  @media (max-width: 44em) {
+    padding: 0 1.5rem;
+  }
+}
